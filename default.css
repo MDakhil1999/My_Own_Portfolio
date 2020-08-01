@@ -69,13 +69,13 @@ h6 { font-size: 16px;}
     display: grid;
     text-align: center;
     align-content: center;
-    border: 2px dashed lightcoral;
     min-height: 10em;
 }
 
 .intro-wrapper{
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
 
     -webkit-box-shadow: 47px 10px 69px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 47px 10px 69px 0px rgba(0,0,0,0.75);
@@ -92,17 +92,61 @@ h6 { font-size: 16px;}
 
 .nav-wrapper{
     grid-area: nav-wrapper;
-    border: 1px dashed lightcoral;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;
+}
+
+#navigation{
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dots-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+#dot-1{
+    background-color: red;
+}
+
+#dot-2{
+    background-color: yellow;
+}
+
+#dot-3{
+    background-color: green;
+}
+
+.browser-dot{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+    -webkit-box-shadow: 47px 10px 69px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 47px 10px 69px 0px rgba(0,0,0,0.75);
+    box-shadow: 47px 10px 69px 0px rgba(0,0,0,0.75);
+
 }
 
 .left-column{
     grid-area: left-column;
-    border: 1px dashed lightcoral;
 }
 
 .right-column{
     grid-area: right-column;
-    border: 1px dashed lightcoral;
 }
 
 @media screen and (max-width: 1200px){
